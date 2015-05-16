@@ -58,8 +58,8 @@ static NSString *const kJTCalendarDaySelected = @"kJTCalendarDaySelected";
 
 - (void)commonInit
 {
-    self.layer.borderWidth = 1;
-    self.layer.borderColor = [UIColor redColor].CGColor;
+    self.layer.borderWidth = kJTCalendarDayViewLayerBoardWidth;
+    self.layer.borderColor = kJTCalendarDayViewLayerBoardColor.CGColor;
     isSelected = NO;
     self.isOtherMonth = NO;
 

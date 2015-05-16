@@ -47,6 +47,7 @@
         
         textLabel.textAlignment = NSTextAlignmentCenter;
         textLabel.numberOfLines = 0;
+        
     }
 }
 

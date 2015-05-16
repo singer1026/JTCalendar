@@ -6,6 +6,7 @@
 //
 
 #import "JTCalendarMonthWeekDaysView.h"
+#import "JTCalendarDayView.h"
 
 @implementation JTCalendarMonthWeekDaysView
 
@@ -36,7 +37,8 @@ static NSArray *cacheDaysOfWeeks;
 }
 
 - (void)commonInit
-{    
+{
+    
     for(NSString *day in [self daysOfWeek]){
         UILabel *view = [UILabel new];
         
@@ -46,9 +48,9 @@ static NSArray *cacheDaysOfWeeks;
         view.textAlignment = NSTextAlignmentCenter;
         view.text = day;
         
+        view.layer.borderColor = kJTCalendarDayViewLayerBoardColor.CGColor;
+        view.layer.borderWidth = kJTCalendarDayViewLayerBoardWidth;
         [self addSubview:view];
-//        view.layer.borderWidth = 1;
-//        view.layer.borderColor = [UIColor redColor].CGColor;
     }
 }
 

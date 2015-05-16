@@ -7,7 +7,7 @@
 
 #import "JTCalendarWeekView.h"
 
-#import "JTCalendarDayView.h"
+
 
 @interface JTCalendarWeekView (){
     NSArray *daysViews;
@@ -52,6 +52,7 @@
     }
     
     daysViews = views;
+    
    
 }
 

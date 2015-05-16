@@ -48,8 +48,8 @@
 
 - (void)commonInit
 {
-    self.layer.borderWidth = 2;
-    self.layer.borderColor = [UIColor redColor].CGColor;
+    self.layer.borderWidth = kJTCalendarDayViewLayerBoardWidth*2;
+    self.layer.borderColor = kJTCalendarDayViewLayerBoardColor.CGColor;
     monthsViews = [NSMutableArray new];
     
     self.showsHorizontalScrollIndicator = NO;

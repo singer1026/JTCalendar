@@ -7,7 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define kJTCalendarDayViewLayerBoardWidth 1.0f
+#define kJTCalendarDayViewLayerBoardColor [UIColor redColor]
+
 #import "JTCalendar.h"
+
 
 @interface JTCalendarDayView : UIView
 
